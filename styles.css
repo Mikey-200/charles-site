@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+@media screen and (width < 500px) {
+  body, html {
+    overflow: auto !important;
+  }
+  .footerbar > a > span {
+    font-size: 15px !important;
+  }
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+.footerbar {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0px;
+}
+.header > h1  {
+  display: flex;
+  justify-content: space-around;
+  height: inherit;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.header {
+  width: 100%;
+  height: 120px;
+  box-shadow: 0px 3px 4px grey;
+  margin-top: -22px;
+  background: linear-gradient(182deg, #c3be1d, white);
+}
+.header > h1 {
+  color: blue;
+}
+.header > .logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: inherit;
+}
+@keyframes slideup {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -45px;
+  }
+  99% {
+    top: -100px;
+  }
+  100% {
+    display: none;
+  }
+}
+@keyframes slideupb {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -95px;
+  }
+  99% {
+    top: -190px;
+  }
+  100% {
+    display: none;
+  }
+}
+.location {
+  animation-name: slideup;
+  animation-duration: .6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-delay: 1s;
+}
+.contact {
+  animation-name: slideupb;
+  animation-duration: .6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-delay: 1s;
+}
+.contracts > p {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  background: #afa7a7;
+  overflow: hidden;
+  border: 2px outset grey;
+  border-radius: 3px;
+}
+.undercontracts > p {
+  width: 95%;
+  height: auto;
+  margin-left: 5%;
+  padding: 5px;
+  background: #afa7a7;
+  border-radius: 3px;
+}
+.underregular > p {
+  width: 90%;
+  height: auto;
+  margin-left: 10%;
+  padding: 5px;
+  background: #afa7a7;
+  border-radius: 3px;
+}
+.maintenanceservices > p {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  background: #afa7a7;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 2px outset grey;
+}
+.undermaintenanceservices > p {
+  width: 95%;
+  height: auto;
+  margin-left: 5%;
+  padding: 5px;
+  background: #afa7a7;
+  border-radius: 3px;
+}
+.underreplacement > p {
+  width: 90%;
+  height: auto;
+  margin-left: 10%;
+  padding: 5px;
+  background: #afa7a7;
+  border-radius: 3px;
+}
+ .contactinfoform > input[type="text"] {
+  padding: 6px;
+  margin: 0 10%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.contactinfoform > textarea {
+  padding: 6px;
+  margin: 0 10%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  resize: none;
+}
+.contactinfoform {
+  overflow: hidden;
+}
+.footerbar > a > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  float: left;
+  border-radius: 3px;
+  border: 3px outset blue;
+  height: 50px;
+  background: grey;
+  box-shadow: 0px -2px 2px blue;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}

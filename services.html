@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="logoicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Rubik:wght@400&display=swap" rel="stylesheet">
+    <title>Services - KING'S ELECTRICALS NIG lTD</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo" style=" float: left; margin-left: 20px; margin-right: 10px;">
+          <img src="logo.jpg" width="100px" height="auto" alt="">
+      </div>
+      <h1>KING'S<br>ELECTRICALS NIG lTD</h1>
+    </div>
+    <div class="contracts">
+      <p>Contracts
+        <span id="contractarrowopen" style="float: right; display: inline;">arrowopen</span><span id="contractarrowclose" style="float: right; display: none;">arrowclose</span>
+      </p>
+      <div class="undercontracts" id="undercontracts" style=" display: none;">
+        <p>Industrial</p>
+        <p>Commercial</p>
+        <p>Regular
+          <span id="underregulararrowopen" style="float: right; display: inline;">arrowopen</span><span id="underregulararrowclose" style="float: right; display: none;">arrowclose</span>
+        </p>
+        <div class="underregular" id="underregular" style=" display: none;">
+          <p>Piping</p>
+          <p>Wiring</p>
+          <p>Fitting</p>
+        </div>
+      </div>
+    </div>
+    <div class="maintenanceservices">
+      <p>Maintenance services
+        <span id="maintenancearrowopen" style="float: right; display: inline;">arrowopen</span><span id="maintenancearrowclose" style="float: right; display: none;">arrowclose</span>
+      </p>
+      <div class="undermaintenanceservices" id="undermaintenanceservices" style=" display: none;">
+        <p>Replacements
+        <span id="underreplacementarrowopen" style="float: right; display: inline;">arrowopen</span><span id="underreplacementarrowclose" style="float: right; display: none;">arrowclose</span>
+        </p>
+      </div>
+        <div class="underreplacement" id="underreplacement" style=" display: none;">
+          <p>Indoors</p>
+          <p>Outdoors</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr align="center" style="width:20%; height:4px; background:blue;">
+    <br>
+    <br>
+    <div class="contactinfo">
+      <form class="contactinfoform" action="index.html" method="post" style="width: 100%; height: 250px;">
+        <input style="border: 2px inset grey; border-radius: 3px; width: 80%; height: 40px; background: #f2f5fb; color: black;" type="text" name="subject" value="Subject" placeholder="subject">
+        <textarea style="border: 2px inset grey; border-radius: 3px; width: 80%; height: 100px; background: #f2f5fb; color: black;" name="message"  placeholder="leave us a message"></textarea>
+        <br>
+        <input type="submit" name="" value="submit">
+      </form>
+    </div>
+    <div class="footerbar">
+      <a href="index.html">
+      <span id="home">Home</span>
+      </a>
+      <a href="#">
+      <span id="services" style="border: 3px inset blue; background: white;">Services</span>
+      </a>
+      <a href="about.html">
+      <span id="about">About</span>
+      </a>
+    </div>
+
+    <script>
+      document.getElementById('contractarrowopen').onclick = function() {
+        document.getElementById('undercontracts').style.display='block';
+        document.getElementById('contractarrowopen').style.display='none';
+        document.getElementById('contractarrowclose').style.display='inline';
+      }
+      document.getElementById('contractarrowclose').onclick = function() {
+        document.getElementById('undercontracts').style.display='none';
+        document.getElementById('contractarrowclose').style.display='none';
+        document.getElementById('contractarrowopen').style.display='inline';
+      }
+
+      document.getElementById('underregulararrowopen').onclick = function() {
+        document.getElementById('underregular').style.display='block';
+        document.getElementById('underregulararrowopen').style.display='none';
+        document.getElementById('underregulararrowclose').style.display='inline';
+      }
+      document.getElementById('underregulararrowclose').onclick = function() {
+        document.getElementById('underregular').style.display='none';
+        document.getElementById('underregulararrowclose').style.display='none';
+        document.getElementById('underregulararrowopen').style.display='inline';
+      }
+
+      document.getElementById('maintenancearrowopen').onclick = function() {
+        document.getElementById('undermaintenanceservices').style.display='block';
+        document.getElementById('maintenancearrowopen').style.display='none';
+        document.getElementById('maintenancearrowclose').style.display='inline';
+      }
+      document.getElementById('maintenancearrowclose').onclick = function() {
+        document.getElementById('undermaintenanceservices').style.display='none';
+        document.getElementById('maintenancearrowclose').style.display='none';
+        document.getElementById('maintenancearrowopen').style.display='inline';
+      }
+
+      document.getElementById('underreplacementarrowopen').onclick = function() {
+        document.getElementById('underreplacement').style.display='block';
+        document.getElementById('underreplacementarrowopen').style.display='none';
+        document.getElementById('underreplacementarrowclose').style.display='inline';
+      }
+      document.getElementById('underreplacementarrowclose').onclick = function() {
+        document.getElementById('underreplacement').style.display='none';
+        document.getElementById('underreplacementarrowclose').style.display='none';
+        document.getElementById('underreplacementarrowopen').style.display='inline';
+      }
+
+
+
+    </script>
+  </body>
+</html>

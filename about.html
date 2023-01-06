@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="logoicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Rubik:wght@400&display=swap" rel="stylesheet">
+    <title>About - KING'S ELECTRICALS NIG lTD</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo" style=" float: left; margin-left: 20px; margin-right: 10px;">
+          <img src="logo.jpg" width="100px" height="auto" alt="">
+      </div>
+      <h1>KING'S<br>ELECTRICALS NIG lTD</h1>
+    </div>
+    <div class="locationholder">
+      <p style="width:100%; padding: 5px; border-radius: 3px;  margin: 0; margin-top: 30px; height: 30px; background: blue; color: white">Locate Us <span id="locatearrowclose" style="float: right;">arrowclose</span><span id="locatearrowopen" style="float: right; display: none;">arrowopen</span> </p>
+      <div class="locationholderbox" id="locationholderbox" style=" overflow: hidden; position: relative; width: 100%; height: 100px; display: flex; justify-content: space-around; ">
+        <p class="location" id="location" style=" top: -100px; background: #daddff; position: absolute; width: 90%; height: auto; border-radius: 5px; box-shadow: 3px 3px 3px,-3px -3px 3px black; padding: 10px;">NO. 34 Port-harcourt Road, opposite Ebere Links Fueling Station, beside NIN Office., Owerri, Imo State</p>
+      </div>
+    </div>
+    <div class="contactusholder">
+      <p style="width:100%; padding: 5px; border-radius: 3px;  margin: 0; margin-top: 30px; height: 30px; background: blue; color: white">Contact Us <span id="contactarrowclose" style="float: right;">arrowclose</span><span id="contactarrowopen" style="float: right; display: none;">arrowopen</span> </p>
+      <div class="contactholderbox" id="contactholderbox" style=" overflow: hidden; position: relative; width: 100%; height: 190px; display: flex; justify-content: space-around; ">
+        <p class="contact" id="contact" style=" top: -190px; background: #daddff; position: absolute; width: 90%; height: auto; border-radius: 5px; box-shadow: 3px 3px 3px,-3px -3px 3px black; padding: 10px;">
+          <a  target="_blank" style="background: inherit; padding:5px; border-radius: 5px; color: inherit; border: 3px outset grey;" href="mailto:kingselectricals42@gmail.com?subject=Services">Email Us</a><br><br>
+          <em> &nbsp kings_electricals_nig_ltd</em><br><br>
+          <em> &nbsp 08066488503</em><br><br>
+          <em> &nbsp <a href="#" style="color: inherit">+2348066488503</a></em>
+        </p>
+      </div>
+    </div>
+    <div class="footerbar">
+      <a href="index.html">
+      <span id="home">Home</span>
+      </a>
+      <a href="services.html">
+      <span id="services" >Services</span>
+      </a>
+      <a href="#">
+      <span id="about" style="border: 3px inset blue; background: white;">About</span>
+      </a>
+    </div>
+    <script>
+      var locatearrowclose = document.getElementById('locatearrowclose');
+      var locatearrowopen = document.getElementById('locatearrowopen')
+      var contactarrowclose = document.getElementById('contactarrowclose');
+      var contactarrowopen = document.getElementById('contactarrowopen')
+
+      locatearrowclose.onclick = function lac() {
+        document.getElementById('location').style.animation='slideup .6s forwards linear 1 normal .5s';
+        document.getElementById('locationholderbox').style.display='none';
+        locatearrowclose.style.display='none';
+        locatearrowopen.style.display='block';
+      }
+
+      locatearrowopen.onclick = function lao() {
+      document.getElementById('locationholderbox').style.display='flex';
+        document.getElementById('location').style.animation='slideup .6s forwards linear 1 reverse .5s';
+        locatearrowopen.style.display='none';
+        locatearrowclose.style.display='block';
+      }
+
+      contactarrowclose.onclick = function cac() {
+        document.getElementById('contact').style.animation='slideupb .6s forwards linear 1 normal .5s';
+        document.getElementById('contactholderbox').style.display='none';
+        contactarrowclose.style.display='none';
+        contactarrowopen.style.display='block';
+      }
+
+      contactarrowopen.onclick = function cao() {
+      document.getElementById('contactholderbox').style.display='flex';
+        document.getElementById('contact').style.animation='slideupb .6s forwards linear 1 reverse .5s';
+        contactarrowopen.style.display='none';
+        contactarrowclose.style.display='block';
+      }
+    </script>
+  </body>
+</html>
